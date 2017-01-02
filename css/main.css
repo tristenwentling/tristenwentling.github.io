@@ -130,19 +130,24 @@ div.full_loaded #loader-wrapper .loader-section.section-left
     #lcont
         {
             display: none;
-            background: #5957C7;
+            background: #BAA7E2;
                                                     }
     
     #ccont
         {
             display: none;
-            background: #29567A;
+            background: #9CC1DE;
                                                     }
     
     #rcont
         {
             display: none;
-            background: #71CBD0;
+            background: #D1E2A7;
+                                                    }
+    
+    .modal-content
+        {
+            padding: 10px;
                                                     }
 
 @-webkit-keyframes spin {
