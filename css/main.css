@@ -148,6 +148,7 @@ div.full_loaded #loader-wrapper .loader-section.section-left
     .modal-content
         {
             padding: 10px;
+            background: #D1B775;
                                                     }
 
 @-webkit-keyframes spin {
