@@ -20,6 +20,12 @@ h3.subscribe
             color: white;
             display: inline;
                                                     }
+
+body.blog
+        {
+        
+                                                    }
+
 div.full_loaded #loader-wrapper .loader-section.section-left 
             {
                 -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
