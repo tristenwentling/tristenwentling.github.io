@@ -1,124 +1,142 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Tristen's Page</title>
-        <meta name="Tristen Wentling" content="Machine Learning and System Design">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Rocket Game Test</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <!--
+    Some helpful references:
+    	jQuery plots for MDB - https://mdbootstrap.com/docs/b4/jquery/javascript/charts/
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'/>
+    -->
+    <div class="container"> <!-- This container holds the input fields-->
+    <div class="d-flex justify-content-center align-items-top"> <!-- Input Fields group 1-->
+    	
+    	<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+		  <label class="form-check-label" for="flexCheckDefault">
+		    Default checkbox
+		  </label>
+		</div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="js/main.js"> </script>
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <div id="loader-wrapper">
-        <div id="loader">
+	    <div class="form-outline">
+		  <input type="text" id="typeNumber" class="form-control-sm" align="left" />
+		  <label class="form-label" for="typeNumber">Fuel Amount</label>
+		
+		</div>
+		
+		<div class="form-outline">
+		  <input type="text" id="typeNumber" class="form-control-sm" align="center"/>
+		  <label class="form-label" for="typeNumber">Fuel Quality</label>
+		
+		</div>
+		
+		<div class="form-outline">
+		  <input type="text" id="typeNumber" class="form-control-sm" align="right"/>
+		  <label class="form-label" for="typeNumber">Input 3</label>
+		</div>
+
+	</div>
+
+    <div class="d-flex justify-content-center align-items-top"> <!-- Input Fields group 2-->
+    	
+    	<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+		  <label class="form-check-label" for="flexCheckDefault">
+		    Default checkbox
+		  </label>
+		</div>
+
+	    <div class="form-outline">
+		  <input type="text" id="typeNumber" class="form-control-sm" align="left" />
+		  <label class="form-label" for="typeNumber">Fuel Amount</label>
+		
+		</div>
+		
+		<div class="form-outline">
+		  <input type="text" id="typeNumber" class="form-control-sm" align="center"/>
+		  <label class="form-label" for="typeNumber">Fuel Quality</label>
+		
+		</div>
+		
+		<div class="form-outline">
+		  <input type="text" id="typeNumber" class="form-control-sm" align="right"/>
+		  <label class="form-label" for="typeNumber">Input 3</label>
+		</div>
+
+	</div>
+	</div>
+    <div class="d-flex justify-content-center align-items-top"> <!-- Input Fields group 3-->
+    	
+    	<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+		  <label class="form-check-label" for="flexCheckDefault">
+		    Default checkbox
+		  </label>
+		</div>
+
+	    <div class="form-outline">
+		  <input type="text" id="typeNumber" class="form-control-sm" align="left" />
+		  <label class="form-label" for="typeNumber">Fuel Amount</label>
+		
+		</div>
+		
+		<div class="form-outline">
+		  <input type="text" id="typeNumber" class="form-control-sm" align="center"/>
+		  <label class="form-label" for="typeNumber">Fuel Quality</label>
+		
+		</div>
+		
+		<div class="form-outline">
+		  <input type="text" id="typeNumber" class="form-control-sm" align="right"/>
+		  <label class="form-label" for="typeNumber">Input 3</label>
+		</div>
+
+	</div>
+
+    <div class="container">  <!-- This container holds the output and display stuff-->
+      <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
+        <div class="text-center">
+          <!-- <img
+            class="mb-4"
+            src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png"
+            style="width: 250px; height: 90px"
+          />
+          <h5 class="mb-3">Thank you for using our product. We're glad you're with us.</h5>
+          <p class="mb-3">MDB Team</p>
+          <a
+            class="btn btn-primary btn-lg"
+            href="https://mdbootstrap.com/docs/standard/getting-started/"
+            target="_blank"
+            role="button"
+            >Start MDB tutorial</a
+          > -->
+          <canvas id="bubbleChart"></canvas>
+
         </div>
-        <div class="loader-section section-left">
-        </div>
-        <div class="loader-section section-right">
-        </div>
+      </div>
     </div>
+    <!-- End your project here-->
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Tristen's Stuff</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form" action="https://formspree.io/tristen.wentling@gmail.com" method="POST">
-            <div class="form-group">
-            <h3 class="subscribe"> Let me know you're interested in a newsletter</h3>
-              <input type="text" placeholder="username@email.com" class="form-control" name="email">
-              <input type="hidden" value="Newsletter Registration" class="form-control" name="hidden">
-            </div>
-            <button type="submit" class="btn btn-success">Subscribe</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Tristen's Stuff</h1>
-        <p>Machine learning and data engineering stuff, mostly.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#thewhy">WHO? &raquo;</a></p>
-
-        <div class="modal" id='thewhy' tabindex="-1" role="dialog" aria-labelledby="Consultants">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <h2> Link Reference </h2>
-                  <p src='resources/links.md' data-markdown></p>
-
-                </div>
-              </div>
-            </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- column content-->
-      <div class="row">
-
-        <div class="col-md-4" id='lcont'>
-        </div>
-        <div class="col-md-4" id='ccont'>
-          <h2>What Do I Do?</h2>
-          <p>Preparing to change roles again, stay tuned.</p>
-
-       </div>
-
-        <div class="col-md-4" id='rcont'>
-        </div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Tristen Wentling 2019</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
-
-        <script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-              ga('create', 'UA-55838708-2', 'auto');
-              ga('send', 'pageview');
-
-        </script>
-    </body>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/bubble.js"></script>
+    <script type="text/javascript"></script>
+  </body>
 </html>
