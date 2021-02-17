@@ -118,24 +118,14 @@
 
     <div class="container">  <!-- This container holds the output and display stuff-->
     	<div class="d-flex justify-content-center align-items-center" style="height: 100vh">
+    		
+
     		<div class="text-center">
-          <!-- <img
-            class="mb-4"
-            src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png"
-            style="width: 250px; height: 90px"
-          />
-          <h5 class="mb-3">Thank you for using our product. We're glad you're with us.</h5>
-          <p class="mb-3">MDB Team</p>
-          <a
-            class="btn btn-primary btn-lg"
-            href="https://mdbootstrap.com/docs/standard/getting-started/"
-            target="_blank"
-            role="button"
-            >Start MDB tutorial</a
-            > -->
             <canvas id="bubbleChart"></canvas>
             <canvas id="bubble-chart" class="chart chartjs-render-monitor" style="display: block; width: 564px; height: 282px;" width="564" height="282"></canvas>
         	</div>
+
+
         </div>
     </div>
 <!-- End your project here-->
@@ -146,42 +136,7 @@ type="text/javascript"
 src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"
 ></script>
 <!-- Custom scripts -->
-<!-- <script type="text/javascript" src="js/bubble.js"></script> -->
-<script type="text/javascript">
-	var ctxBc = document.getElementById('bubbleChart').getContext('2d');
-	var bubbleChart = new Chart(ctxBc, {
-		type: 'bubble',
-		data: {
-			datasets: [{
-				label: 'John',
-				data: [{
-					x: 3,
-					y: 7,
-					r: 10
-				}],
-				backgroundColor: "#ff6384",
-				hoverBackgroundColor: "#ff6384"
-			}, {
-				label: 'Peter',
-				data: [{
-					x: 5,
-					y: 7,
-					r: 10
-				}],
-				backgroundColor: "#44e4ee",
-				hoverBackgroundColor: "#44e4ee"
-			}, {
-				label: 'Donald',
-				data: [{
-					x: 7,
-					y: 7,
-					r: 10
-				}],
-				backgroundColor: "#62088A",
-				hoverBackgroundColor: "#62088A"
-			}]
-		}
-	})  	
+<script type="text/javascript" src="js/bubble.js"></script>
 </script>
 </body>
 </html>
