@@ -17,11 +17,11 @@
 	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
 	rel="stylesheet"
 	/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- MDB -->
-	<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css"
-	rel="stylesheet"
-	/>
+	<!-- <link rel="stylesheet" href="css/mdb.min.css"> -->
+	<link rel="stylesheet" href="css/basic.css">
+	<!-- <link rel="stylesheet" href="css/custom.css"> -->
 </head>
 <body>
 	<!-- Start your project here-->
@@ -30,109 +30,86 @@
     	jQuery plots for MDB - https://mdbootstrap.com/docs/b4/jquery/javascript/charts/
 
     -->
+    <div id="loader-wrapper">
+    	<div id="loader"></div>
+    	<div class="loader-section section-left"></div>
+    	<div class="loader-section section-right"></div>
+    </div>
+    <div id=titlediv>
+    	<h1 id="title" align="center">Rocket Game</h1>
+    </div>
     <div class="container"> <!-- This container holds the input fields-->
     	<div class="d-flex justify-content-center align-items-top"> <!-- Input Fields group 1-->
 
     		<div class="form-check">
-    			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-    			<label class="form-check-label" for="flexCheckDefault">
-    				Default checkbox
-    			</label>
+    			<input class="form-check-input" type="checkbox" value="" id="prop_on_off">
+    			<label class="form-check-label" for="flexCheckDefault">Property On/Off</label>
     		</div>
-
+    		<hspace/>
     		<div class="form-outline">
-    			<input type="text" id="typeNumber" class="form-control-sm" align="left" />
+    			<input type="text" id="fuel_amount" class="form-control-sm" align="left" />
     			<label class="form-label" for="typeNumber">Fuel Amount</label>
-
     		</div>
 
     		<div class="form-outline">
-    			<input type="text" id="typeNumber" class="form-control-sm" align="center"/>
+    			<input type="text" id="fuel_quality" class="form-control-sm" align="center"/>
     			<label class="form-label" for="typeNumber">Fuel Quality</label>
-
     		</div>
 
     		<div class="form-outline">
-    			<input type="text" id="typeNumber" class="form-control-sm" align="right"/>
-    			<label class="form-label" for="typeNumber">Input 3</label>
+    			<input type="text" id="other_input" class="form-control-sm" align="right"/>
+    			<label class="form-label" for="typeNumber">Some Other Input</label>
     		</div>
 
     	</div>
 
-    	<div class="d-flex justify-content-center align-items-top"> <!-- Input Fields group 2-->
-
-    		<div class="form-check">
-    			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-    			<label class="form-check-label" for="flexCheckDefault">
-    				Default checkbox
-    			</label>
-    		</div>
-
-    		<div class="form-outline">
-    			<input type="text" id="typeNumber" class="form-control-sm" align="left" />
-    			<label class="form-label" for="typeNumber">Fuel Amount</label>
-
-    		</div>
-
-    		<div class="form-outline">
-    			<input type="text" id="typeNumber" class="form-control-sm" align="center"/>
-    			<label class="form-label" for="typeNumber">Fuel Quality</label>
-
-    		</div>
-
-    		<div class="form-outline">
-    			<input type="text" id="typeNumber" class="form-control-sm" align="right"/>
-    			<label class="form-label" for="typeNumber">Input 3</label>
-    		</div>
-
-    	</div>
-
-	    <div class="d-flex justify-content-center align-items-top"> <!-- Input Fields group 3-->
-	    	
-	    	<div class="form-check">
-	    		<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-	    		<label class="form-check-label" for="flexCheckDefault">
-	    			Default checkbox
-	    		</label>
-	    	</div>
-
-	    	<div class="form-outline">
-	    		<input type="text" id="typeNumber" class="form-control-sm" align="left" />
-	    		<label class="form-label" for="typeNumber">Fuel Amount</label>
-
-	    	</div>
-
-	    	<div class="form-outline">
-	    		<input type="text" id="typeNumber" class="form-control-sm" align="center"/>
-	    		<label class="form-label" for="typeNumber">Fuel Quality</label>
-
-	    	</div>
-
-	    	<div class="form-outline">
-	    		<input type="text" id="typeNumber" class="form-control-sm" align="right"/>
-	    		<label class="form-label" for="typeNumber">Input 3</label>
-	    	</div>
-
-	    </div>
+	</div>
+	<hr/>
+	<div class="container"> <!-- This container holds your text stuff-->
+		<h3> Description </h3>
+		<p> 
+				Put your game description here
+		</p>
 	</div>
 
-    <div class="container">  <!-- This container holds the output and display stuff-->
-    	<div class="d-flex justify-content-center align-items-center" style="height: 100vh">
-    		
 
-    		<div class="text-center">
-            <canvas id="bubbleChart" width="500" height="500" style="border:2px solid #000000;background-color : #eee;"></canvas>
-            <canvas id="bubble-chart" class="chart chartjs-render-monitor" style="display: block; width: 564px; height: 282px;" width="564" height="282"></canvas>
-        	</div>
+    <div class="container">  <!-- This container holds the first example-->
+		<h3> Diagram Example </h3>
+		<div class="text-center">
+        <canvas id="bubbleChart" width="1200" height="300" style="border:2px solid #000000;"></canvas>
+        <hr/>
+        <button id="example" type="button" >Example Calculation</button>
+		<button id="inputs" type="button" >Calculate with your values</button>
+		<hr/>
+    	</div>
 
+    </div>
 
-        </div>
+    <div class="container">  <!-- This container holds the calculation example-->
+		<h3> Calculation Example </h3>
+		<div class="text-center">
+        <canvas id="bubbleChart2" width="1200" height="300" style="border:2px solid #000000;"></canvas>
+        <hr/>
+		<p id=explained2> Explanation</p>
+    	</div>
+
+    </div>
+
+    <div class="container">  <!-- This container holds the user calculation-->
+		<h3> Your Output </h3>
+		<div class="text-center">
+        <canvas id="bubbleChart3" width="1200" height="300" style="border:2px solid #000000;"></canvas>
+        <hr/>
+		<p id=explained3> Explanation </p>
+    	</div>
+
     </div>
 <!-- End your project here-->
 
 <!-- MDB -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
 <!-- Custom scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
 <script src="js/bubble.js"></script>
 </body>
