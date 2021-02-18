@@ -66,17 +66,8 @@ var bubbleChart = new Chart(ctxBc, {
 })
 
 $("#example").click(function() {
-	// var distance = 0;
- //    var datasets = bubbleChart.config.data.datasets;
- //    var data = datasets.pop();
- //    data.data = {x:6, y:0, r:5};
- //    datasets.push(data)
- //    bubbleChart.config.data.datasets = datasets
- //    bubbleChart.update()
- //    bubbleChart.render()
- //    console.log(bubbleChart.config.data.datasets)
  var ctxBc = document.getElementById('bubbleChart2').getContext('2d');
-var bubbleChart = new Chart(ctxBc, {
+ var bubbleChart = new Chart(ctxBc, {
 	type: 'bubble',
 	data: {
 		datasets: [{
@@ -137,21 +128,14 @@ var bubbleChart = new Chart(ctxBc, {
     		}
     }
 	});
-	$('p#explanation2').replaceWith('<p>Updated explanation message</p>');
 });
 
 $("#inputs").click(function() {
-	// var distance = 0;
- //    var datasets = bubbleChart.config.data.datasets;
- //    var data = datasets.pop();
- //    data.data = {x:6, y:0, r:5};
- //    datasets.push(data)
- //    bubbleChart.config.data.datasets = datasets
- //    bubbleChart.update()
- //    bubbleChart.render()
- //    console.log(bubbleChart.config.data.datasets)
+ var val1 = parseInt($('#fuel_amount').val(), 10)
+ var val2 = parseInt($('#fuel_quality').val(), 10)
+ var val3 = parseInt($('#other_input').val(), 10)
  var ctxBc = document.getElementById('bubbleChart3').getContext('2d');
-var bubbleChart = new Chart(ctxBc, {
+ var bubbleChart = new Chart(ctxBc, {
 	type: 'bubble',
 	data: {
 		datasets: [{
@@ -185,7 +169,7 @@ var bubbleChart = new Chart(ctxBc, {
 			{
 			label: 'Rocket Distance',
 			data: [{
-				x: parseInt($('#fuel_amount').val(), 10) + parseInt($('#fuel_quality').val(), 10) + parseInt($('#other_input').val(), 10),
+				x: val1 + val2 + val3,
 				y: 0,
 				r: 5
 			}],
