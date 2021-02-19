@@ -1,7 +1,16 @@
 // Chart docs https://www.chartjs.org/docs/latest/developers/api.html
-$.ajaxSetup({ cache: false });
+$.ajaxSetup({ cache: false });  //Do not remove
 
+// Set distances
+var MOON = .75
+var MARS = 10
 
+// Set radii for objects
+var big_r = 45
+var sml_r = 15
+var rkt_r = 5
+
+// On page load -> chart 1
 var ctxBc = document.getElementById('bubbleChart').getContext('2d');
 var bubbleChart = new Chart(ctxBc, {
 	type: 'bubble',
@@ -11,25 +20,25 @@ var bubbleChart = new Chart(ctxBc, {
 			data: [{
 				x: 0,
 				y: 0,
-				r: 25
+				r: big_r
 			}],
 			backgroundColor: "blue",
 			hoverBackgroundColor: "#ff6384",
 		}, {
 			label: 'Moon',
 			data: [{
-				x: 2,
+				x: MOON,
 				y: 0,
-				r: 10
+				r: sml_r
 			}],
 			backgroundColor: "gray",
 			hoverBackgroundColor: "#44e4ee"
 		}, {
 			label: 'Planet X',
 			data: [{
-				x: 10,
+				x: MARS,
 				y: 0,
-				r: 25
+				r: big_r
 			}],
 			backgroundColor: "purple",
 			hoverBackgroundColor: "#62088A"
@@ -37,7 +46,7 @@ var bubbleChart = new Chart(ctxBc, {
 			{
 			label: 'Rocket Distance',
 			data: [{
-				x: 4,
+				x: (MOON + MARS)/2,
 				y: 0,
 				r: 5
 			}],
@@ -53,11 +62,16 @@ var bubbleChart = new Chart(ctxBc, {
         },
         scales: {
             xAxes: [{
-                display: true
+                display: true,
+                label: "Miles"
             }],
             yAxes: [{
-                display: false
-            }]
+                display: false,
+			    ticks: {
+			        stepSize: 1,
+			        min: -1,
+			        max: 1}
+			            }]
         },
         animation: {
         	duration: 0
@@ -65,6 +79,7 @@ var bubbleChart = new Chart(ctxBc, {
     }
 })
 
+// Example button click -> chart 2
 $("#example").click(function() {
  var ctxBc = document.getElementById('bubbleChart2').getContext('2d');
  var bubbleChart = new Chart(ctxBc, {
@@ -75,25 +90,25 @@ $("#example").click(function() {
 			data: [{
 				x: 0,
 				y: 0,
-				r: 25
+				r: big_r
 			}],
 			backgroundColor: "blue",
 			hoverBackgroundColor: "#ff6384",
 		}, {
 			label: 'Moon',
 			data: [{
-				x: 2,
+				x: MOON,
 				y: 0,
-				r: 10
+				r: sml_r
 			}],
 			backgroundColor: "gray",
 			hoverBackgroundColor: "#44e4ee"
 		}, {
 			label: 'Planet X',
 			data: [{
-				x: 10,
+				x: MARS,
 				y: 0,
-				r: 25
+				r: big_r
 			}],
 			backgroundColor: "purple",
 			hoverBackgroundColor: "#62088A"
@@ -130,6 +145,7 @@ $("#example").click(function() {
 	});
 });
 
+// Calculate button click -> chart 3
 $("#inputs").click(function() {
  var val1 = parseInt($('#fuel_amount').val(), 10)
  var val2 = parseInt($('#fuel_quality').val(), 10)
@@ -143,25 +159,25 @@ $("#inputs").click(function() {
 			data: [{
 				x: 0,
 				y: 0,
-				r: 25
+				r: big_r
 			}],
 			backgroundColor: "blue",
 			hoverBackgroundColor: "#ff6384",
 		}, {
 			label: 'Moon',
 			data: [{
-				x: 2,
+				x: MOON,
 				y: 0,
-				r: 10
+				r: sml_r
 			}],
 			backgroundColor: "gray",
 			hoverBackgroundColor: "#44e4ee"
 		}, {
 			label: 'Planet X',
 			data: [{
-				x: 10,
+				x: MARS,
 				y: 0,
-				r: 25
+				r: big_r
 			}],
 			backgroundColor: "purple",
 			hoverBackgroundColor: "#62088A"
